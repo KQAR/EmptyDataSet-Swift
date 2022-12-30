@@ -32,6 +32,7 @@
 		61F8492022CE217600F50028 /* EmptyDataSetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAC5FE2027EDC8008BD16D /* EmptyDataSetSource.swift */; };
 		61F8492122CE217600F50028 /* EmptyDataSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAC5FF2027EDC8008BD16D /* EmptyDataSetView.swift */; };
 		61F8492222CE217600F50028 /* EmptyDataSetView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAC5FB2027EDC8008BD16D /* EmptyDataSetView+Extension.swift */; };
+		63264661295E8DF800A2FE06 /* NSLayoutConstraint+EmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63264660295E8DF800A2FE06 /* NSLayoutConstraint+EmptyDataSet.swift */; };
 		8EBE56CA2334A3C800D81AFD /* 88.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBE56692334A3C800D81AFD /* 88.png */; };
 		8EBE56CB2334A3C800D81AFD /* 77.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBE566A2334A3C800D81AFD /* 77.png */; };
 		8EBE56CC2334A3C800D81AFD /* 63.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBE566B2334A3C800D81AFD /* 63.png */; };
@@ -183,6 +184,7 @@
 		61F8491022CE212300F50028 /* EmptyDataSet_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmptyDataSet_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F8491222CE212300F50028 /* EmptyDataSet_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyDataSet_Swift.h; sourceTree = "<group>"; };
 		61F8491322CE212300F50028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63264660295E8DF800A2FE06 /* NSLayoutConstraint+EmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+EmptyDataSet.swift"; sourceTree = "<group>"; };
 		8EBE56692334A3C800D81AFD /* 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 88.png; sourceTree = "<group>"; };
 		8EBE566A2334A3C800D81AFD /* 77.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 77.png; sourceTree = "<group>"; };
 		8EBE566B2334A3C800D81AFD /* 63.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 63.png; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 				2FFAC5FE2027EDC8008BD16D /* EmptyDataSetSource.swift */,
 				2FFAC5FF2027EDC8008BD16D /* EmptyDataSetView.swift */,
 				2FFAC5FB2027EDC8008BD16D /* EmptyDataSetView+Extension.swift */,
+				63264660295E8DF800A2FE06 /* NSLayoutConstraint+EmptyDataSet.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				61F8492122CE217600F50028 /* EmptyDataSetView.swift in Sources */,
 				61F8491E22CE217600F50028 /* EmptyDataSet.swift in Sources */,
 				61F8491F22CE217600F50028 /* EmptyDataSetDelegate.swift in Sources */,
+				63264661295E8DF800A2FE06 /* NSLayoutConstraint+EmptyDataSet.swift in Sources */,
 				61F8492222CE217600F50028 /* EmptyDataSetView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

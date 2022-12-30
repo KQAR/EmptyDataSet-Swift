@@ -24,7 +24,7 @@ public class EmptyDataSetView: UIView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = UIColor.clear
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = false
         imageView.accessibilityIdentifier = "empty set background image"
         self.contentView.addSubview(imageView)
@@ -244,7 +244,7 @@ public class EmptyDataSetView: UIView {
                 subviewStrings.append("titleLabel")
                 views[subviewStrings.last!] = titleLabel
                 
-                contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(padding)-[titleLabel(>=0)]-(padding)-|", options: [], metrics: metrics, views: views))
+              contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(padding)-[titleLabel(>=0)]-(padding)-|", options: [], metrics: metrics, views: views).map { $0.withPriority(.defaultHigh) })
             } else {
                 titleLabel.isHidden = true
             }
@@ -255,7 +255,7 @@ public class EmptyDataSetView: UIView {
                 subviewStrings.append("detailLabel")
                 views[subviewStrings.last!] = detailLabel
 
-                contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(padding)-[detailLabel(>=0)]-(padding)-|", options: [], metrics: metrics, views: views))
+                contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(padding)-[detailLabel(>=0)]-(padding)-|", options: [], metrics: metrics, views: views).map { $0.withPriority(.defaultHigh) })
             } else {
                 detailLabel.isHidden = true
             }
@@ -266,7 +266,7 @@ public class EmptyDataSetView: UIView {
                 subviewStrings.append("button")
                 views[subviewStrings.last!] = button
                 
-                contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(padding)-[button(>=0)]-(padding)-|", options: [], metrics: metrics, views: views))
+                contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(padding)-[button(>=0)]-(padding)-|", options: [], metrics: metrics, views: views).map { $0.withPriority(.defaultHigh) })
             } else {
                 button.isHidden = true
             }
