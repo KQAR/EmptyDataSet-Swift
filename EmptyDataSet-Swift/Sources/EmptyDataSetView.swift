@@ -234,6 +234,7 @@ public class EmptyDataSetView: UIView {
                 views[subviewStrings.last!] = imageView
                 
                 contentView.addConstraint(NSLayoutConstraint.init(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: contentView, attribute: .centerX, multiplier: 1.0, constant: 0.0))
+                contentView.addConstraint(NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: contentView, attribute: .width, multiplier: 1.0, constant: 0.0))
             } else {
                 imageView.isHidden = true
             }
