@@ -24,7 +24,7 @@ public class EmptyDataSetView: UIView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = UIColor.clear
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         imageView.isUserInteractionEnabled = false
         imageView.accessibilityIdentifier = "empty set background image"
         self.contentView.addSubview(imageView)
